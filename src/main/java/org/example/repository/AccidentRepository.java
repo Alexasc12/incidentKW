@@ -8,7 +8,7 @@ import java.util.List;
 
 @Repository
 public interface AccidentRepository extends CrudRepository <Accident,Integer> {
-
+@Override
      List<Accident> findAll();
 
 

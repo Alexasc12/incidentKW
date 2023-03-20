@@ -1,17 +1,17 @@
 package org.example.service;
 
 import org.example.model.Accident;
+import org.example.model.AccidentType;
+import org.example.model.Rule;
 import org.example.repository.AccidentRepository;
+import org.example.repository.RuleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 public class AccidentService {
@@ -22,8 +22,13 @@ public class AccidentService {
         this.accidentRepository = accidentRepository;
     }
 
-    public Accident saveAccident(Accident accident) {
-        return accidentRepository.save(accident);
+    public boolean saveAccident(Accident accident, Optional<AccidentType> accidentTypeOptional, Set<Rule> ruleSet) {
+       AccidentType accidentType =  accidentTypeOptional.get();
+       accident.setType(accidentType);
+       accident.setRules(ruleSet);
+       return accidentRepository.save(accident) != null;
+
+
     }
 
 
