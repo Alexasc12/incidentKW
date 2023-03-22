@@ -1,13 +1,11 @@
-package org.example.service;
+package org.example.app.service;
 
-import org.example.model.Accident;
-import org.example.model.AccidentType;
-import org.example.model.Rule;
-import org.example.repository.AccidentRepository;
-import org.example.repository.RuleRepository;
+import org.example.app.model.Accident;
+import org.example.app.model.AccidentType;
+import org.example.app.model.Rule;
+import org.example.app.repository.AccidentRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.crossstore.ChangeSetPersister;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;

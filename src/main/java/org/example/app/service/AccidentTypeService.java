@@ -1,8 +1,9 @@
-package org.example.service;
+package org.example.app.service;
 
 import lombok.AllArgsConstructor;
-import org.example.model.AccidentType;
-import org.example.repository.AccidentTypeRepository;
+import org.example.app.model.AccidentType;
+import org.example.app.repository.AccidentTypeRepository;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;

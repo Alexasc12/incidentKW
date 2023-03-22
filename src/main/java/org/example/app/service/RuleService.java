@@ -1,8 +1,9 @@
-package org.example.service;
+package org.example.app.service;
 
 import lombok.AllArgsConstructor;
-import org.example.model.Rule;
-import org.example.repository.RuleRepository;
+import org.example.app.model.Rule;
+import org.example.app.repository.RuleRepository;
+
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;

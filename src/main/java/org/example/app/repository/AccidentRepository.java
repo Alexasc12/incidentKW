@@ -1,6 +1,7 @@
-package org.example.repository;
+package org.example.app.repository;
 
-import org.example.model.Accident;
+import org.example.app.model.Accident;
+
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

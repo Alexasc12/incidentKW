@@ -1,7 +1,7 @@
-package org.example.repository;
+package org.example.app.repository;
 
-import org.example.model.Accident;
-import org.example.model.AccidentType;
+import org.example.app.model.AccidentType;
+
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

@@ -1,12 +1,13 @@
-package org.example.controller;
+package org.example.app.controller;
 
 import lombok.AllArgsConstructor;
-import org.example.model.Accident;
-import org.example.model.AccidentType;
-import org.example.model.Rule;
-import org.example.service.AccidentService;
-import org.example.service.AccidentTypeService;
-import org.example.service.RuleService;
+import org.example.app.model.Accident;
+import org.example.app.model.AccidentType;
+import org.example.app.model.Rule;
+import org.example.app.service.AccidentService;
+import org.example.app.service.AccidentTypeService;
+import org.example.app.service.RuleService;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
