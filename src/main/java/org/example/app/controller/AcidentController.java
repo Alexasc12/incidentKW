@@ -54,9 +54,7 @@ public class AcidentController {
             model.addAttribute("messege", "не сщхраненно");
             return "errors/404";
         }
-
         return "redirect:/allAccidents";
     }
-
 
 }
